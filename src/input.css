@@ -44,11 +44,11 @@
     visibility: visible;
 }
 
-.btnprev:hover svg path {
+.btn-prev:hover svg path {
     stroke: white !important;
 }
 
-.btnnext:hover svg path {
+.btn-next:hover svg path {
     stroke: white;
 }
 
@@ -63,11 +63,12 @@
 }
 
 .slider-list .slick-track {
-    height: 331px !important;
+    /* height: 331px !important; */
 }
 
 .slick-slide {
     padding: 0px 18px;
+    height: auto !important;
 }
 
 .slider-list {

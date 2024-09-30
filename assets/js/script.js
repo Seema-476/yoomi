@@ -30,14 +30,14 @@ $('.slider-list').slick({
         {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 1.1,
                 slidesToScroll: 1,
             }
         },
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 1.1,
                 slidesToScroll: 1,
             }
         },
