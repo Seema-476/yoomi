@@ -21,19 +21,17 @@ $('.slider-list').slick({
     dots: false,
     infinite: true,
     speed: 600,
-    // fade: true,
     // autoplay: true,
-    slidesToShow: 1,
+    slidesToShow: 1.1,
     slidesToScroll: 1,
-    nextArrow: ".btnnext",
-    prevArrow: ".btnprev",
+    nextArrow: ".btn-next",
+    prevArrow: ".btn-prev",
     responsive: [
         {
             breakpoint: 1200,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                // dots: true,
             }
         },
         {
@@ -52,38 +50,23 @@ $('.slider-list').slick({
         }
     ]
 });
-$('.slider-list2').slick({
-    dots: true,
-    infinite: true,
-    speed: 2000,
-    // fade: true,
-    // autoplay: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: false,
-    prevArrow: ".btnprev",
-    responsive: [
-        {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                // dots: true,
-            }
-        },
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 620,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }
-    ]
+
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 22,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
 });
