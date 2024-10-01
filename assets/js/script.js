@@ -53,7 +53,7 @@ $('.slider-list').slick({
     ]
 });
 
-// slider 2
+// slider2
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 22,
