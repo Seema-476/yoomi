@@ -97,13 +97,14 @@
                     class="md:max-w-[133px] sm:max-w-[60px] max-w-[45px] pointer-events-none"></div>
             <div class="absolute bottom-[-25px] md:bottom-[-60px] sm:bottom-[-35px] sm:right-[87px] right-[37px]"><img
                     src="./assets/images/webp/flowerright.webp" alt="flower"
-                    class="md:max-w-[68px] sm:max-w-[40px] max-w-[25px] pointer-events-none"></div>
+                    class="md:max-w-[68px] sm:max-w-[40px] max-w-[25px] -mb-1 pointer-events-none"></div>
         </div>
         <div class="w-full h-[2.24px] bg-sky-blue"></div>
         <div class="w-full xl:h-6 lg:h-5 md:h-4 sm:h-3 h-2 bg-deep-blue"></div>
         <div class="w-full h-[1.78px] bg-dark-gray"></div>
         <div class="bg-ocean-blue lg:pb-[198px] md:pb-[150px] sm:pb-[115px] pb-[85px]"></div>
     </header>
+
     <!-- image-section -->
     <section>
         <div class="container">
@@ -114,6 +115,7 @@
             </div>
         </div>
     </section>
+
     <!-- Features -->
     <section
         class="xl:pt-[125px] md:pt-[60px] pt-12 md:pb-12 pb-6 lg:mt-[-152px] md:mt-[-112px] sm:mt-[-90px] mt-[-62px]"
@@ -183,11 +185,11 @@
                         <div class="flex gap-[10px] relative z-10 pt-4">
                             <div
                                 class="btn-prev border border-black w-[35px] h-[35px] rounded-[50%] flex items-center justify-center hover:border-hidden hover:bg-deep-blue duration-200 cursor-pointer">
-                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.05726 1.18284L1.67187 5.56823L6.05726 9.95361" stroke="black"
-                                        stroke-width="1.75416" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                       <svg class="rotate-[177deg]" xmlns="http://www.w3.org/2000/svg" width="7" height="11" fill="none" class="bi bi-chevron-left"
+                                viewBox="0 0 7 11">
+                                <path d="M1.15905 1.18284L5.54443 5.56823L1.15905 9.95361" stroke="black" stroke-width="1.75416" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
                             </div>
                             <div
                                 class="btn-next border border-black w-[35px] h-[35px] rounded-[50%] flex items-center justify-center hover:border-hidden hover:bg-deep-blue duration-200 cursor-pointer">
@@ -499,29 +501,29 @@
     <section>
         <div class="container">
             <div
-                class="max-w-[1145px] bg-deep-blue xl:p-[38px_103px_19px_82px] lg:p-[38px_60px_19px_60px] rounded-[32px] sm:py-6 sm:px-6 p-10 relative -mb-[192px]">
+                class="max-w-[1145px] bg-deep-blue xl:p-[38px_103px_19px_82px] lg:p-[38px_60px_19px_60px] rounded-[32px] sm:py-6 sm:px-6 px-5 py-8 relative -mb-[192px]">
                 <div class="sm:flex md:justify-between flex-wrap">
                     <div class="max-w-[442px] flex flex-col justify-center">
                         <img src="./assets/images/webp/newsletter-logo.webp"
                             class="lg:w-[228px] sm:w-[100px] w-[80px] h- [55px] pointer-events-none"
                             alt="newsletter-logo">
-                        <p
-                            class="font-plusJakarta md:text-3xl text-xl md:leading-custom-3xl text-2 font-normal text-white sm:pt-7 pt-5">
+                        <p 
+                            class="font-plusJakarta text-nowrap md:text-3xl text-xl md:leading-custom-3xl text-2 font-normal text-white sm:pt-7 pt-5">
                             Sign Up to Join <span class="font-semibold">Our Newsletter</span></p>
-                        <div
+                        <form method="get" id="emailForm"
                             class="shadow-custom-xl py-[5.62px] xl:mt-12 lg:mt-8 mt-5 ps-[11px] pe-1 text-center lg:max-w-[428px] sm:max-w-[328px] max-w-[228px] bg-white flex justify-between w-full rounded">
-                            <input type="text" placeholder="Enter Your Email"
+                            <input type="text" placeholder="Enter Your Email" required
                                 class="font-inter font-medium xl:text-base sm:text-sm text-xs xl:leading-custom-lg !text-blue outline-none w-full mr-3 opacity-[70%]">
                             <button
                                 class="font-inter font-bold xl:text-base sm:text-sm text-xs xl:leading-custom-lg text-white bg-deep-blue xl:py-[13px] md:py-3 py-2.5 xl:px-4 md:px-3.5 px-3 rounded text-end hover:scale-95 duration-300 text-nowrap">Get
                                 Started</button>
-                        </div>
+                    </form>
                     </div>
                     <img src="./assets/images/webp/newsletter-men.webp"
                         class="lg:max-w-[300px] pointer-events-none md:max-w-[190px] max-w-[200px] max-md:text-center max-md:mx-auto lg:mt-0 mt-5"
                         alt="men-image">
                     <div class="absolute right-0 bottom-0">
-                        <img src="./assets/images/webp/newsletter-rightbox.webp" alt="box" class="pointer-events-none">
+                        <img src="./assets/images/webp/newsletter-rightbox.webp" alt="box" class="pointer-events-none lg:w-[247px] w-[145px]">
                     </div>
                 </div>
             </div>

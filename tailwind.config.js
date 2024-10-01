@@ -59,7 +59,7 @@ module.exports = {
       backgroundImage: {
         'platform-card1': "url('../assets/images/webp/platform-card1.webp')",
         'footer-bg': "url('../assets/images/webp/footer-bg.webp')",
-        'star':"url('../assets/images/png/star.png')",
+        'star':"url('../assets/images/webp/star.webp')",
       },
       fontFamily: {
         'plusJakarta': "'plus jakarta sans' ,sans serif",
