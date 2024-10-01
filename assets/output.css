@@ -1432,6 +1432,10 @@ video {
   font-weight: 600;
 }
 
+.font-extrabold{
+  font-weight: 800;
+}
+
 .leading-4{
   line-height: 1rem;
 }
@@ -1491,6 +1495,10 @@ video {
 
 .opacity-\[80\%\]{
   opacity: 80%;
+}
+
+.opacity-\[70\]{
+  opacity: 70;
 }
 
 .shadow-custom-2xl{
@@ -1668,6 +1676,26 @@ video {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.placeholder\:text-black::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-black::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-blue::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(17 1 99 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-blue::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(17 1 99 / var(--tw-text-opacity));
 }
 
 .after\:absolute::after{
