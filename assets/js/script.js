@@ -23,7 +23,7 @@ $('.slider-list').slick({
     dots: false,
     infinite: true,
     speed: 600,
-    // autoplay: true,
+    autoplay: true,
     slidesToShow: 1.1,
     slidesToScroll: 1,
     nextArrow: ".btn-next",
@@ -73,3 +73,6 @@ var swiper2 = new Swiper(".mySwiper2", {
         swiper: swiper,
     },
 });
+
+// animation
+AOS.init();

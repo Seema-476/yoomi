@@ -1077,6 +1077,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
 .text-nowrap{
   text-wrap: nowrap;
 }
@@ -1416,6 +1420,10 @@ video {
   font-weight: 700;
 }
 
+.font-extrabold{
+  font-weight: 800;
+}
+
 .font-light{
   font-weight: 300;
 }
@@ -1430,10 +1438,6 @@ video {
 
 .font-semibold{
   font-weight: 600;
-}
-
-.font-extrabold{
-  font-weight: 800;
 }
 
 .leading-4{
@@ -1495,10 +1499,6 @@ video {
 
 .opacity-\[80\%\]{
   opacity: 80%;
-}
-
-.opacity-\[70\]{
-  opacity: 70;
 }
 
 .shadow-custom-2xl{
