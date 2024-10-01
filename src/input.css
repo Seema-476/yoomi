@@ -7,7 +7,7 @@
     scroll-behavior: smooth !important;
     transition: 300ms linear !important;
 }
-
+/* cross-icon */
 .cross span:nth-child(1) {
     transform: rotate(45deg) translateY(9px);
     transition: all 300ms linear !important;
@@ -43,6 +43,7 @@
     opacity: 1;
     visibility: visible;
 }
+/* slider 1 */
 
 .btn-prev:hover svg path {
     stroke: white !important;
@@ -53,17 +54,7 @@
 }
 
 .slider-list .slick-slide>div {
-    /* max-width: 460px !important; */
     width: 100%;
-}
-
-.slider-list .slick-active {
-    /* max-width: 460px !important; */
-    /* margin-right: 37px !important; */
-}
-
-.slider-list .slick-track {
-    /* height: 331px !important; */
 }
 
 .slick-slide {
@@ -79,6 +70,7 @@
     padding-left: 40px !important;
 }
 
+/* slider 2 */
 .swiper-slide {
     text-align: center;
     display: flex;
@@ -123,7 +115,3 @@
     width: 100%;
     height: 100%;
 }
-
-/* .features .slick-list {
-    padding-left: 40px !important;
-} */

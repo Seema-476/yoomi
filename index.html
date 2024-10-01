@@ -12,7 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/output.css">
-    <link rel="icon" href="./assets/images/webp/fav-logo.webp">
+    <link rel="icon" href="./assets/images/webp/logo.webp">
     <!-- Primary Meta Tags -->
     <title>Yoomi</title>
     <meta name="title" content="Yoomi" />
@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <header class="bg-off-white relative">
+    <header class="bg-off-white relative" id="recent">
         <nav class="pt-6">
             <div class="container">
                 <div class="flex items-center justify-between w-full">
@@ -76,7 +76,7 @@
             <h1
                 class="font-plusJakarta font-normal xl:text-custom-8xl lg:text-5xl sm:text-4xl text-[27px] xl:leading-custom-7xl leading-[35px] text-black text-center mx-auto pb-5">
                 <span class="font-bold">Next Generation</span> Patient <span class="block"></span> Engagement and RTM
-                Solution
+                <span class="relative after:absolute after:contents-[''] sm:after:-right-12 sm:after:top-4 lg:after:-top-4 after:bg-star sm:after:w-12 after:w-6 sm:after:h-12 after:h-6 after:bg-cover after:mt-2 sm:after:-mt-4 xl:after:mt-6 lg:after:mt-7">Solution</span>
             </h1>
             <p
                 class="font-inter font-normal lg:text-2xl md:text-xl sm:text-lg text-base xl:leading-custom-xxl text-black opacity-70 text-center xl:pb-14 lg:pb-11 md:pb-10 pb-7">
@@ -104,6 +104,7 @@
         <div class="w-full h-[1.78px] bg-dark-gray"></div>
         <div class="bg-ocean-blue lg:pb-[198px] md:pb-[150px] sm:pb-[115px] pb-[85px]"></div>
     </header>
+    <!-- image-section -->
     <section>
         <div class="container">
             <div
@@ -134,7 +135,7 @@
                     <div class="lg:w-[50%] px-3 w-full">
                         <p class="font-inter font-normal text-base leading-custom-lg text-deep-blue pb-2">LIBRARY</p>
                         <h3
-                            class="font-plusJakarta font-normal xl:text-custom-4xl sm:text-3xl text-2xl xl:leading-custom-4xl text-black pb-[21px]">
+                            class="font-plusJakarta font-normal xl:text-custom-4xl sm:text-3xl text-2xl xl:leading-custom-4xl text-black pb-6">
                             Extensive Exercise <span class="font-semibold">Library</span></h3>
                         <div class="flex  pb-2">
                             <img src="./assets/images/svg/checked.svg" alt="checked">
@@ -206,6 +207,7 @@
         </div>
         </div>
     </section>
+
     <!-- TRACKING -->
     <section class="md:py-12 py-6 relative" id="news">
         <div class="absolute left-0 md:top-[-129px] top-[-70px] -z-10">
@@ -273,6 +275,7 @@
             </div>
         </div>
     </section>
+
     <!-- report -->
     <section class="md:pt-12 pt-6 xl:pb-[96px] md:pb-[60px] pb-12 relative" id="contact">
         <div class="absolute right-4 top-[-95px] -z-10">
@@ -323,8 +326,9 @@
             </div>
         </div>
     </section>
+
     <!-- Platform -->
-    <section class="xl:py-[79px] lg:py-16 py-12 bg-light-gray relative">
+    <section class="xl:py-[79px] lg:py-16 py-12 bg-light-gray relative" id="mission">
         <div class="absolute right-0 top-3">
             <img src="./assets/images/webp/plateform-right-top-elip.webp" alt="elip"
                 class="pointer-events-none md:w-[135px] w-[70px]">
@@ -349,16 +353,16 @@
                 </div>
                 <div class="bg-light-blue max-w-[268px] h-[207px] w-full flex flex-col justify-center relative">
                     <p
-                        class="font-inter font-semibold lg:text-custom-7xl md:text-5xl text-4xl lg:leading-custom-6xl text-white text-center">
+                        class="font-inter font-semibold lg:text-6xl md:text-5xl text-4xl lg:leading-custom-8xl text-white text-center">
                         90%</p>
                     <p class="font-inter font-normal text-xl leading-custom-2xl text-white text-center">
                         Increase In-Patient Satisfaction</p>
                     <div class="absolute bottom-0 right-0"><img src="./assets/images/webp/platform-card-elip.webp"
                             alt="card" class="w-[123px] pointer-events-none"></div>
                 </div>
-                <div class="bg-deep-blue max-w-[268px] h-[207px] w-full flex flex-col justify-center relative">
+                <div class="bg-deep-blue max-w-[268px] h-[207px] w-full flex flex-col justify-center relative pb-5">
                     <p
-                        class="font-inter font-semibold lg:text-custom-7xl md:text-5xl text-4xl lg:leading-custom-6xl text-white text-center">
+                        class="font-inter font-semibold lg:text-6xl md:text-5xl text-4xl lg:leading-custom-8xl text-white text-center">
                         60%</p>
                     <p class="font-inter font-normal text-xl leading-custom-2xl text-white text-center">
                         Faster Recovery</p>
@@ -368,8 +372,9 @@
             </div>
         </div>
     </section>
+
     <!-- Partners -->
-    <section class="xl:pt-[87px] lg:pt-16 pt-12 md:pb-[47.5px] pb-6">
+    <section class="xl:pt-[87px] lg:pt-16 pt-12 md:pb-[47.5px] pb-6" id="team">
         <div class="container">
             <p class="font-inter font-normal text-base leading-custom-lg text-deep-blue pb-2 text-center">PARTNERS
             </p>
@@ -379,30 +384,31 @@
                         class="md:block">Institutions</span></span></p>
             <div class="flex lg:gap-7 gap-5 max-lg:flex-wrap justify-center">
                 <div
-                    class="w-[207px] h-[137px] flex items-center justify-center border shadow-custom-4xl bg-white border-gray-light rounded p-10">
+                    class="w-[207px] h-[137px] flex items-center justify-center border shadow-custom-4xl hover:shadow-custom-5xl bg-white border-gray-light rounded p-10">
                     <img src="./assets/images/webp/nih-image.webp" alt="nih" class="w-[92px]">
                 </div>
                 <div
-                    class="w-[207px] h-[137px] flex items-center justify-center border shadow-custom-4xl bg-white border-gray-light rounded p-8">
+                    class="w-[207px] h-[137px] flex items-center justify-center border shadow-custom-4xl hover:shadow-custom-5xl bg-white border-gray-light rounded p-8">
                     <img src="./assets/images/webp/universitat-carol.webp" alt="nih" class="w-[80px]">
                 </div>
                 <div
-                    class="w-[207px] h-[137px] flex items-center justify-center border shadow-custom-4xl bg-white border-gray-light rounded p-8">
+                    class="w-[207px] h-[137px] flex items-center justify-center border shadow-custom-4xl hover:shadow-custom-5xl bg-white border-gray-light rounded p-8">
                     <img src="./assets/images/webp/rwj-image.webp" alt="nih" class="w-[96px]">
                 </div>
                 <div
-                    class="w-[207px] h-[137px] flex items-center justify-center border shadow-custom-4xl bg-white border-gray-light rounded p-8">
+                    class="w-[207px] h-[137px] flex items-center justify-center border shadow-custom-4xl hover:shadow-custom-5xl bg-white border-gray-light rounded p-8">
                     <img src="./assets/images/webp/g-and-g.webp" alt="nih" class="w-[77px]">
                 </div>
                 <div
-                    class="w-[207px] h-[137px] flex items-center justify-center border shadow-custom-4xl bg-white border-gray-light rounded p-8">
+                    class="w-[207px] h-[137px] flex items-center justify-center border shadow-custom-4xl hover:shadow-custom-5xl bg-white border-gray-light rounded p-8">
                     <img src="./assets/images/webp/cornell-uni.webp" alt="nih" class="w-[92px]">
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Know More -->
-    <section class="md:pt-[47.5px] pt-6 pb-[41px]">
+    <section class="md:pt-[47px] pt-6 xl:pb-[92px] md:pb-[60px] pb-[41px]" id="vision">
         <div class="container">
             <p class="font-inter font-normal text-base leading-custom-lg text-deep-blue pb-4 text-center">KNOW MORE
             </p>
@@ -488,6 +494,7 @@
             </div>
         </div>
     </section>
+
     <!-- newsletter -->
     <section>
         <div class="container">
@@ -520,21 +527,22 @@
             </div>
         </div>
     </section>
+
     <!-- footer -->
     <footer class="bg-footer-bg bg-cover bg-center bg-no-repeat mt-24">
         <div class="container">
-            <div class="flex-row flex flex-wrap -mx-3 lg:justify-between xl:pt-[213px] lg:pt-[150px] pt-[150px]">
+            <div class="flex-row flex flex-wrap -mx-3 lg:justify-between xl:pt-[213px] pt-[150px]">
                 <div class="lg:w-[25%] px-3 w-full">
                     <a href=""><img src="./assets/images/webp/footer-logo.webp"
                             class="lg:max-w-[192px] max-w-[100px] pointer-events-none" alt="footer-logo"></a>
                     <p class="font-inter font-light text-sm text-white py-[29.82px] lg:max-w-[277px]">I'm a paragraph.
                         Click here to add your own text and edit me. It’s easy. Just click “Edit Text”</p>
                     <a target="_blank"
-                        class="text-white flex gap-[18px] max-w-[197px] font-light font-inter text-base leading-custom-lg"
+                        class="text-white flex gap-[18px] max-w-[197px] font-light font-inter text-base leading-custom-lg hover:text-light-blue"
                         href="mailto:contact@yoomi.com"><img src="./assets/images/svg/mail-box.svg" alt="mail-box"
                             class="pointer-events-none">contact@yoomi.com</a>
                     <a href="callto:+123456789"
-                        class="text-white flex gap-[18px] font-inter text-base leading-custom-lg max-w-[146px] pt-4"><img
+                        class="text-white flex gap-[18px] font-inter text-base leading-custom-lg max-w-[146px] pt-4 hover:text-light-blue"><img
                             src="./assets/images/svg/phone-vector.svg" class="max-w-[24px]" alt="phone-vector">+123 456
                         789</a>
                 </div>
@@ -543,15 +551,15 @@
                         <div class="lg:w-[33.33%] px-3 sm:w-[33.33%] w-[50%]">
                             <ul class="ms-0 ps-0">
                                 <li
-                                    class="font-semibold text-sm leading-4 font-inter text-white lg:pb-[18px] pb-4 pt-4 lg:pt-0">
+                                    class="font-semibold text-sm leading-4 font-inter text-white lg:pb-[18px] py-4 lg:pt-0">
                                     About Us</li>
-                                <li class="lg:pb-[18px] sm:pb-4 pb-3"><a href=""
+                                <li class="lg:pb-[18px] sm:pb-4 pb-3"><a href="#team"
                                         class="font-inter font-normal leading-4 text-white text-sm text-nowrap hover:text-light-blue transition-all ease-linear">Meet
                                         the Team</a></li>
-                                <li class="lg:pb-[18px] sm:pb-4 pb-3"><a href=""
+                                <li class="lg:pb-[18px] sm:pb-4 pb-3"><a href="#mission"
                                         class="font-inter font-normal leading-4 text-white text-sm text-nowrap hover:text-light-blue transition-all ease-linear">Our
                                         Mission</a></li>
-                                <li><a href=""
+                                <li><a href="#vision"
                                         class="font-inter font-normal leading-4 text-white text-sm text-nowrap hover:text-light-blue transition-all ease-linear">Our
                                         Vision</a></li>
                             </ul>
@@ -579,7 +587,7 @@
                                 <li
                                     class="font-semibold text-sm leading-4 font-inter text-white lg:pb-[18px] pb-4 pt-4 lg:pt-0">
                                     News</li>
-                                <li><a href=""
+                                <li><a href="#recent"
                                         class="font-inter font-normal leading-4 text-white text-sm text-nowrap mb-[18px] hover:text-light-blue transition-all ease-linear">Recent</a>
                                 </li>
                             </ul>

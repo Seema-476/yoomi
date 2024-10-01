@@ -1,3 +1,4 @@
+// menu-icon
 function opennav() {
     document.querySelector(".menulist").classList.toggle("start-0");
     document.querySelector(".menuicon").classList.toggle("cross");
@@ -17,6 +18,7 @@ topBtn.addEventListener("click", function () {
     document.documentElement.scrollTop = 0;
 })
 
+// slider 1
 $('.slider-list').slick({
     dots: false,
     infinite: true,
@@ -51,6 +53,7 @@ $('.slider-list').slick({
     ]
 });
 
+// slider 2
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 22,

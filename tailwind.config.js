@@ -41,6 +41,7 @@ module.exports = {
         'custom-2xl': "0px 3.86px 21.24px 0px #0000001A",
         'custom-3xl': "0px 0px 18.03px 0px #0000000D",
         'custom-4xl': "0px 13px 18px 0px #0000000F",
+        'custom-5xl': "-2px 8px 20px 18px #0000000F",
       },
       lineHeight: {
         'custom-base': "16.94px",
@@ -58,6 +59,7 @@ module.exports = {
       backgroundImage: {
         'platform-card1': "url('../assets/images/webp/platform-card1.webp')",
         'footer-bg': "url('../assets/images/webp/footer-bg.webp')",
+        'star':"url('../assets/images/png/star.png')",
       },
       fontFamily: {
         'plusJakarta': "'plus jakarta sans' ,sans serif",
