@@ -75,4 +75,6 @@ var swiper2 = new Swiper(".mySwiper2", {
 });
 
 // animation
-AOS.init();
+AOS.init({
+    once:true,
+});
