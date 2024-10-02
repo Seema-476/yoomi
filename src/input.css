@@ -7,6 +7,7 @@
     scroll-behavior: smooth !important;
     transition: 300ms linear !important;
 }
+
 /* cross-icon */
 .cross span:nth-child(1) {
     transform: rotate(45deg) translateY(9px);
@@ -43,6 +44,7 @@
     opacity: 1;
     visibility: visible;
 }
+
 /* slider 1 */
 
 .btn-prev:hover svg path {
@@ -94,14 +96,14 @@
 
 .mySwiper {
     width: 725px !important;
-    height: 165px;
+    height: 98px;
     box-sizing: border-box;
-    padding: 10px 30px;
+    padding: 7px 30px;
 }
 
 .mySwiper .swiper-slide {
-    width: 152px !important;
-    height: 114px !important;
+    width: 112px !important;
+    height: 80px !important;
 }
 
 .mySwiper .swiper-slide-thumb-active {
@@ -113,4 +115,16 @@
     display: block;
     width: 100%;
     height: 100%;
+}
+
+@media(min-width:640px) {
+    .mySwiper .swiper-slide {
+        width: 152px !important;
+        height: 114px !important;
+    }
+
+    .mySwiper {
+        height: 165px;
+        padding: 10px 30px;
+    }
 }
